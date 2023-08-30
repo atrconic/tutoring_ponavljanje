@@ -27,9 +27,6 @@ class CourseSerializer(serializers.ModelSerializer):
 
 class MentorCourseSerializer(serializers.ModelSerializer):
 
-    def get_queryset(self):
-        queryset = Klass.object.all()
-        return queryset
 
     class Meta:
         model = Course
